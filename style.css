@@ -1,0 +1,128 @@
+:root {
+	--custom-purple: hsl(259, 100%, 65%);
+	--custom-light-red: hsl(0, 100%, 67%);
+	--custom-white: hsl(0, 0%, 100%);
+	--custom-off-white: hsl(0, 0%, 94%);
+	--custom-light-grey: hsl(0, 0%, 86%);
+	--custom-smokey-grey: hsl(0, 1%, 44%);
+	--custom-off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Italic.ttf);
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Bold.ttf);
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+	font-style: italic;
+	font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--custom-off-black);
+}
+
+html {
+	font-size: 32px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	padding-top: 2.75rem;
+	background-color: var(--custom-off-white);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	max-width: 375px;
+	padding: 0 .5rem;
+}
+
+.card {
+	background-color: var(--custom-white);
+	border-radius: .75rem;
+	padding: 1.65rem .75rem 1.5rem;
+	border-bottom-right-radius: 3rem;
+}
+
+
+.inputs {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: .5rem;
+}
+
+.inputs label {
+	text-transform: uppercase;
+	font-size: .4rem;
+	letter-spacing: 3px;
+	display: block;
+}
+
+.inputs input {
+	width: 100%;
+	margin-top: .25rem;
+	padding: .3rem 0 .3rem .5rem;
+	border-radius: .2rem;
+	font-size: 20px;
+	border: 1px solid var(--custom-light-grey);
+}
+
+hr {
+	position: relative;
+	margin: 2rem 0;
+	overflow: visible;
+}
+
+hr::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--custom-purple);
+	background-image: url(./assets/images/icon-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	background-size: 24px;
+	cursor: pointer;
+}
+
+.result section {
+	font-size: 56px;
+	font-weight: 800;
+	font-style: italic;
+	line-height: 62px;
+	letter-spacing: -1px;
+}
+
+.result section span {
+	color: var(--custom-purple);
+}
