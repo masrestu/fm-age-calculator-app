@@ -60,10 +60,6 @@ main {
 	padding: 0 .5rem;
 }
 
-h1 {
-  display: none;
-}
-
 .card {
 	background-color: var(--custom-white);
 	border-radius: .75rem;
