@@ -111,4 +111,3 @@ const validate = () => {
 };
 
 btnExec.addEventListener("click", validate);
-btnExec.click()
