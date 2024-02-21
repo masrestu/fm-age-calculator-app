@@ -142,6 +142,7 @@ main {
 .action .button {
   position: absolute;
   display: block;
+  color: transparent;
   border: none;
   border-radius: 50%;
   height: 100%;
@@ -160,7 +161,7 @@ main {
   background-color: var(--custom-off-black);
 }
 
-.result section {
+.result h2 {
 	font-size: 56px;
 	font-weight: 800;
 	font-style: italic;
@@ -168,7 +169,7 @@ main {
 	letter-spacing: -1px;
 }
 
-.result section span {
+.result h2 span {
 	color: var(--custom-purple);
   margin-right: 11px;
   letter-spacing: -2px;
@@ -229,13 +230,13 @@ main {
     transform: translateX(0);
   }
   
-  .result section {
+  .result h2 {
     font-size: 104px;
     margin-bottom: 10px;
     letter-spacing: -2px;
   }
   
-  .result section span {
+  .result h2 span {
     margin-right: 12px;
   }
 }
