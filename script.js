@@ -1,4 +1,4 @@
-const btnExec = document.querySelector("button");
+const btnExec = document.querySelector(".button");
 
 const validate = () => {
   const dayLabel = document.querySelector("label[for=day-input]");
